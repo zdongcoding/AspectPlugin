@@ -1,0 +1,55 @@
+apply plugin: 'groovy'
+//apply plugin: 'maven'
+
+
+//version '1.0-SNAPSHOT'
+//group 'com.zdg.plugin'
+
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+    compile 'com.android.tools.build:gradle:2.3.3'
+    compile 'org.aspectj:aspectjtools:1.8.10'
+    compile 'org.aspectj:aspectjrt:1.8.10'
+}
+
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            repository(url: uri('../../maven/repo'))
+//        }
+//    }
+//}
+
+ext{
+    bintrayRepo = 'maven'  //创库名称
+    bintrayName = 'AspectjPlugin'  //项目名称
+
+    publishedGroupId = 'com.github.zdongcoding'   //groupid
+    libraryName = 'aspectplugin'    //
+    artifact = 'aspectplugin'
+//    artifact_Id = 'bintrayhelper'
+    maturity ='Stable'     //成熟度  stable  development offical experimental
+    libraryDescription = 'aspectj 配置简化' //项目描述
+    /*项目地址或者issue地址*/
+    siteUrl = 'https://github.com/zdongcoding/bintrayhelper'
+    gitUrl = 'https://github.com/zdongcoding/bintrayhelper.git'
+    issueUrl='https://github.com/zdongcoding/bintrayhelper/issues'
+    libraryVersion = '0.1.1'    //版本号
+    alllabels = ['android','aspectj']
+    /*一些开发者信息*/
+    developerId = 'zdongcoding'
+    developerName = 'zoudong'
+    developerEmail = 'zoudongq1990@gmail.com'
+    /*一些开源信息*/
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+apply from: 'https://raw.githubusercontent.com/zdongcoding/simplebintray/master/SimpleBintray.gradle'

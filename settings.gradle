@@ -1,0 +1,2 @@
+include ':aspect_plugin'
+rootProject.name='AspectPlugin'
