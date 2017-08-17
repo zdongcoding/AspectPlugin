@@ -38,11 +38,11 @@ ext{
     maturity ='Stable'     //成熟度  stable  development offical experimental
     libraryDescription = 'aspectj 配置简化' //项目描述
     /*项目地址或者issue地址*/
-    siteUrl = 'https://github.com/zdongcoding/bintrayhelper'
-    gitUrl = 'https://github.com/zdongcoding/bintrayhelper.git'
-    issueUrl='https://github.com/zdongcoding/bintrayhelper/issues'
-    libraryVersion = '0.1.1'    //版本号
-    alllabels = ['android','aspectj']
+    siteUrl = 'https://github.com/zdongcoding/AspectPlugin'
+    gitUrl = 'https://github.com/zdongcoding/AspectPlugin.git'
+    issueUrl='https://github.com/zdongcoding/AspectPlugin/issues'
+    libraryVersion = '0.1.0'    //版本号
+    alllabels = ['android','gradle','plugin','aspectj']
     /*一些开发者信息*/
     developerId = 'zdongcoding'
     developerName = 'zoudong'
